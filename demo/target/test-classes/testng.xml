@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="YouTrack Selenium Tests Suite" parallel="methods" thread-count="5">
+    
+    <test name="Login Positive Tests">
+        <classes>
+            <class name="tests.LoginPositiveTest"/>
+        </classes>
+    </test>
+
+    <test name="Login Negative Tests">
+        <classes>
+            <class name="tests.LoginNegativeTest"/>
+        </classes>
+    </test>
+    
+    <test name="Create Issue Positive Tests">
+        <classes>
+            <class name="tests.CreateIssuePositiveTest"/>
+        </classes>
+    </test>
+    
+    <test name="Create Issue Negative Tests">
+        <classes>
+            <class name="tests.CreateIssueNegativeTest"/>
+        </classes>
+    </test>
+
+    <test name="Create Project Tests">
+        <classes>
+            <class name="tests.CreateProjectTest"/>
+        </classes>
+    </test>
+
+    
+</suite>
