@@ -17,7 +17,6 @@ public class CreateProjectTest extends BaseTest
         String projectId = "ID" + System.currentTimeMillis();
         projectPage.createProject(projectName,projectId);
         Assert.assertTrue(projectPage.isProjectCreatedSuccessfully(), 
-            "Задача не была создана успешно");
-        System.out.println("Project created " + projectName);
+            "Проект не был создан успешно");
     }
 }

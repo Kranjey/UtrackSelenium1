@@ -13,7 +13,5 @@ public class LoginNegativeTest extends BaseTest {
             "Сообщение об ошибке не отображается");
         Assert.assertFalse(loginPage.isLoggedIn(), 
             "Logged with invalid");
-        System.out.println("NEG success " + 
-            username + "/" + password);
     }
 }

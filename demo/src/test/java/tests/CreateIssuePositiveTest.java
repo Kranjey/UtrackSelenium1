@@ -19,6 +19,5 @@ public class CreateIssuePositiveTest extends BaseTest{
         issuePage.createIssue(summary, description);
         Assert.assertTrue(issuePage.isIssueCreatedSuccessfully(), 
             "Задача не была создана успешно");
-        System.out.println("Issue created " + summary);
     }
 }

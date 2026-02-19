@@ -12,6 +12,5 @@ public class LoginPositiveTest extends BaseTest {
         String password = TestConfig.getValidPassword();
         loginPage.login(username, password);
         Assert.assertTrue(loginPage.isLoggedIn());
-        System.out.println("Success");
     }
 }
