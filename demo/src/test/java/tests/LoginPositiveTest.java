@@ -11,6 +11,6 @@ public class LoginPositiveTest extends BaseTest {
         String username = TestConfig.getValidUsername();
         String password = TestConfig.getValidPassword();
         loginPage.login(username, password);
-        Assert.assertTrue(loginPage.isLoggedIn());
+        Assert.assertTrue(loginPage.isLoggedIn(), "Unauthorized with Valid Data");
     }
 }

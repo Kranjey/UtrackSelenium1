@@ -21,6 +21,6 @@ public class CreateIssueNegativeTest extends BaseTest{
         issuePage.enterIssuePage();
         issuePage.clickSubmit();     
         Assert.assertFalse(issuePage.isButtonEnabled(), 
-            "Кнопка доступна");
+            "Button is Available");
     }
 }

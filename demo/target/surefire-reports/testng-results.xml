@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-19T15:57:23 GMT+04:00" name="YouTrack Selenium Tests Suite" finished-at="2026-02-19T15:58:35 GMT+04:00" duration-ms="71941">
+  <suite started-at="2026-02-19T16:02:34 GMT+04:00" name="YouTrack Selenium Tests Suite" finished-at="2026-02-19T16:03:46 GMT+04:00" duration-ms="72089">
     <groups>
     </groups>
-    <test started-at="2026-02-19T15:57:23 GMT+04:00" name="Login Positive Tests" finished-at="2026-02-19T15:57:27 GMT+04:00" duration-ms="3838">
+    <test started-at="2026-02-19T16:02:34 GMT+04:00" name="Login Positive Tests" finished-at="2026-02-19T16:02:37 GMT+04:00" duration-ms="3858">
       <class name="tests.LoginPositiveTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPositiveTest@4f6ee6e4]" started-at="2026-02-19T15:57:23 GMT+04:00" name="setUp" finished-at="2026-02-19T15:57:25 GMT+04:00" duration-ms="2073" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPositiveTest@4f6ee6e4]" started-at="2026-02-19T16:02:34 GMT+04:00" name="setUp" finished-at="2026-02-19T16:02:36 GMT+04:00" duration-ms="2042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:tests.LoginPositiveTest@4f6ee6e4]" started-at="2026-02-19T15:57:25 GMT+04:00" name="testSuccessfulLogin" description="Позитивный тест: Успешная аутентификация" finished-at="2026-02-19T15:57:27 GMT+04:00" duration-ms="1328" status="PASS">
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:tests.LoginPositiveTest@4f6ee6e4]" started-at="2026-02-19T16:02:36 GMT+04:00" name="testSuccessfulLogin" description="Позитивный тест: Успешная аутентификация" finished-at="2026-02-19T16:02:37 GMT+04:00" duration-ms="1447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginPositiveTest@4f6ee6e4]" started-at="2026-02-19T15:57:27 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:57:27 GMT+04:00" duration-ms="402" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginPositiveTest@4f6ee6e4]" started-at="2026-02-19T16:02:37 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:02:37 GMT+04:00" duration-ms="333" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,13 +28,13 @@
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginPositiveTest -->
     </test> <!-- Login Positive Tests -->
-    <test started-at="2026-02-19T15:57:27 GMT+04:00" name="Login Negative Tests" finished-at="2026-02-19T15:58:16 GMT+04:00" duration-ms="49321">
+    <test started-at="2026-02-19T16:02:37 GMT+04:00" name="Login Negative Tests" finished-at="2026-02-19T16:03:27 GMT+04:00" duration-ms="49677">
       <class name="tests.LoginNegativeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:27 GMT+04:00" name="setUp" finished-at="2026-02-19T15:57:28 GMT+04:00" duration-ms="1322" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:02:37 GMT+04:00" name="setUp" finished-at="2026-02-19T16:02:39 GMT+04:00" duration-ms="1303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:28 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T15:57:39 GMT+04:00" duration-ms="10813" status="PASS">
+        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:02:39 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T16:02:50 GMT+04:00" duration-ms="10916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFailedLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:39 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:57:39 GMT+04:00" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:02:50 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:02:50 GMT+04:00" duration-ms="318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:39 GMT+04:00" name="setUp" finished-at="2026-02-19T15:57:40 GMT+04:00" duration-ms="992" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:02:50 GMT+04:00" name="setUp" finished-at="2026-02-19T16:02:51 GMT+04:00" duration-ms="947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:40 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T15:57:52 GMT+04:00" duration-ms="11562" status="PASS">
+        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:02:51 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T16:03:02 GMT+04:00" duration-ms="11383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFailedLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:52 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:57:52 GMT+04:00" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:02 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:03:03 GMT+04:00" duration-ms="276" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,11 +92,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:52 GMT+04:00" name="setUp" finished-at="2026-02-19T15:57:53 GMT+04:00" duration-ms="1337" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:03 GMT+04:00" name="setUp" finished-at="2026-02-19T16:03:04 GMT+04:00" duration-ms="1320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:57:53 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T15:58:04 GMT+04:00" duration-ms="10607" status="PASS">
+        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:04 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T16:03:14 GMT+04:00" duration-ms="10593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFailedLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:58:04 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:58:04 GMT+04:00" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:14 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:03:15 GMT+04:00" duration-ms="320" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,11 +123,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:58:04 GMT+04:00" name="setUp" finished-at="2026-02-19T15:58:06 GMT+04:00" duration-ms="1450" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:15 GMT+04:00" name="setUp" finished-at="2026-02-19T16:03:16 GMT+04:00" duration-ms="1295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:58:06 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T15:58:16 GMT+04:00" duration-ms="10539" status="PASS">
+        <test-method signature="testFailedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:16 GMT+04:00" name="testFailedLogin" description="Негативный тест: Аутентификация с неверными данными" data-provider="invalidLoginData" finished-at="2026-02-19T16:03:27 GMT+04:00" duration-ms="10607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFailedLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T15:58:16 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:58:16 GMT+04:00" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginNegativeTest@7cc0cdad]" started-at="2026-02-19T16:03:27 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:03:27 GMT+04:00" duration-ms="385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,17 +156,17 @@
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginNegativeTest -->
     </test> <!-- Login Negative Tests -->
-    <test started-at="2026-02-19T15:58:16 GMT+04:00" name="Create Issue Positive Tests" finished-at="2026-02-19T15:58:23 GMT+04:00" duration-ms="7013">
+    <test started-at="2026-02-19T16:03:27 GMT+04:00" name="Create Issue Positive Tests" finished-at="2026-02-19T16:03:34 GMT+04:00" duration-ms="6903">
       <class name="tests.CreateIssuePositiveTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateIssuePositiveTest@4c583ecf]" started-at="2026-02-19T15:58:16 GMT+04:00" name="setUp" finished-at="2026-02-19T15:58:18 GMT+04:00" duration-ms="1222" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateIssuePositiveTest@4c583ecf]" started-at="2026-02-19T16:03:27 GMT+04:00" name="setUp" finished-at="2026-02-19T16:03:28 GMT+04:00" duration-ms="1343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateIssueSuccessfully()[pri:0, instance:tests.CreateIssuePositiveTest@4c583ecf]" started-at="2026-02-19T15:58:18 GMT+04:00" name="testCreateIssueSuccessfully" description="Позитивный тест: Создание новой задачи" finished-at="2026-02-19T15:58:23 GMT+04:00" duration-ms="5544" status="PASS">
+        <test-method signature="testCreateIssueSuccessfully()[pri:0, instance:tests.CreateIssuePositiveTest@4c583ecf]" started-at="2026-02-19T16:03:28 GMT+04:00" name="testCreateIssueSuccessfully" description="Позитивный тест: Создание новой задачи" finished-at="2026-02-19T16:03:34 GMT+04:00" duration-ms="5238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateIssueSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateIssuePositiveTest@4c583ecf]" started-at="2026-02-19T15:58:23 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:58:23 GMT+04:00" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateIssuePositiveTest@4c583ecf]" started-at="2026-02-19T16:03:34 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:03:34 GMT+04:00" duration-ms="320" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,17 +179,17 @@
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CreateIssuePositiveTest -->
     </test> <!-- Create Issue Positive Tests -->
-    <test started-at="2026-02-19T15:58:23 GMT+04:00" name="Create Issue Negative Tests" finished-at="2026-02-19T15:58:29 GMT+04:00" duration-ms="6084">
+    <test started-at="2026-02-19T16:03:34 GMT+04:00" name="Create Issue Negative Tests" finished-at="2026-02-19T16:03:40 GMT+04:00" duration-ms="5969">
       <class name="tests.CreateIssueNegativeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateIssueNegativeTest@1aafa419]" started-at="2026-02-19T15:58:23 GMT+04:00" name="setUp" finished-at="2026-02-19T15:58:25 GMT+04:00" duration-ms="1406" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateIssueNegativeTest@1aafa419]" started-at="2026-02-19T16:03:34 GMT+04:00" name="setUp" finished-at="2026-02-19T16:03:36 GMT+04:00" duration-ms="1585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateIssueWithoutRequiredFields()[pri:0, instance:tests.CreateIssueNegativeTest@1aafa419]" started-at="2026-02-19T15:58:25 GMT+04:00" name="testCreateIssueWithoutRequiredFields" description="Негативный тест: Создание задачи без обязательных полей" finished-at="2026-02-19T15:58:29 GMT+04:00" duration-ms="4478" status="PASS">
+        <test-method signature="testCreateIssueWithoutRequiredFields()[pri:0, instance:tests.CreateIssueNegativeTest@1aafa419]" started-at="2026-02-19T16:03:36 GMT+04:00" name="testCreateIssueWithoutRequiredFields" description="Негативный тест: Создание задачи без обязательных полей" finished-at="2026-02-19T16:03:39 GMT+04:00" duration-ms="3887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateIssueWithoutRequiredFields -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateIssueNegativeTest@1aafa419]" started-at="2026-02-19T15:58:29 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:58:29 GMT+04:00" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateIssueNegativeTest@1aafa419]" started-at="2026-02-19T16:03:39 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:03:40 GMT+04:00" duration-ms="495" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,17 +202,17 @@
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CreateIssueNegativeTest -->
     </test> <!-- Create Issue Negative Tests -->
-    <test started-at="2026-02-19T15:58:29 GMT+04:00" name="Create Project Tests" finished-at="2026-02-19T15:58:35 GMT+04:00" duration-ms="5648">
+    <test started-at="2026-02-19T16:03:40 GMT+04:00" name="Create Project Tests" finished-at="2026-02-19T16:03:46 GMT+04:00" duration-ms="5651">
       <class name="tests.CreateProjectTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateProjectTest@235834f2]" started-at="2026-02-19T15:58:29 GMT+04:00" name="setUp" finished-at="2026-02-19T15:58:31 GMT+04:00" duration-ms="1429" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateProjectTest@235834f2]" started-at="2026-02-19T16:03:40 GMT+04:00" name="setUp" finished-at="2026-02-19T16:03:41 GMT+04:00" duration-ms="972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateProjectSuccessfully()[pri:0, instance:tests.CreateProjectTest@235834f2]" started-at="2026-02-19T15:58:31 GMT+04:00" name="testCreateProjectSuccessfully" description="Позитивный тест: Создание нового проекта" finished-at="2026-02-19T15:58:35 GMT+04:00" duration-ms="3997" status="PASS">
+        <test-method signature="testCreateProjectSuccessfully()[pri:0, instance:tests.CreateProjectTest@235834f2]" started-at="2026-02-19T16:03:41 GMT+04:00" name="testCreateProjectSuccessfully" description="Позитивный тест: Создание нового проекта" finished-at="2026-02-19T16:03:45 GMT+04:00" duration-ms="4230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProjectSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateProjectTest@235834f2]" started-at="2026-02-19T15:58:35 GMT+04:00" name="tearDown" finished-at="2026-02-19T15:58:35 GMT+04:00" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateProjectTest@235834f2]" started-at="2026-02-19T16:03:45 GMT+04:00" name="tearDown" finished-at="2026-02-19T16:03:46 GMT+04:00" duration-ms="446" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -10,8 +10,8 @@ public class LoginNegativeTest extends BaseTest {
     public void testFailedLogin(String username, String password) {
         loginPage.login(username, password);
         Assert.assertTrue(loginPage.isErrorMessageDisplayed(), 
-            "Сообщение об ошибке не отображается");
+            "Error message isnt displayed");
         Assert.assertFalse(loginPage.isLoggedIn(), 
-            "Logged with invalid");
+            "Logged with invalid data");
     }
 }

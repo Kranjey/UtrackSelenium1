@@ -118,6 +118,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(admin, )">testFailedLogin(admin, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(invalid_user, wrong_password)">testFailedLogin(invalid_user, wrong_password)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -129,11 +134,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(, admin12)">testFailedLogin(, admin12)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(admin, )">testFailedLogin(admin, )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -229,6 +229,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testFailedLogin(admin, )">
+                  </a> <!-- testFailedLogin(admin, ) -->
+                  <span class="method-name">testFailedLogin</span>
+                  <span class="parameters">(admin,)</span>
+                  <em>
+(Негативный тест: Аутентификация с неверными данными)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testFailedLogin(invalid_user, wrong_password)">
                   </a> <!-- testFailedLogin(invalid_user, wrong_password) -->
                   <span class="method-name">testFailedLogin</span>
@@ -253,16 +263,6 @@
                   </a> <!-- testFailedLogin(, admin12) -->
                   <span class="method-name">testFailedLogin</span>
                   <span class="parameters">(,admin12)</span>
-                  <em>
-(Негативный тест: Аутентификация с неверными данными)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testFailedLogin(admin, )">
-                  </a> <!-- testFailedLogin(admin, ) -->
-                  <span class="method-name">testFailedLogin</span>
-                  <span class="parameters">(admin,)</span>
                   <em>
 (Негативный тест: Аутентификация с неверными данными)                  </em>
                 </div> <!-- method-content -->
@@ -357,11 +357,11 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testFailedLogin')
 data.setCell(0, 2, 'tests.LoginNegativeTest')
-data.setCell(0, 3, 11562);
+data.setCell(0, 3, 11383);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testFailedLogin')
 data.setCell(1, 2, 'tests.LoginNegativeTest')
-data.setCell(1, 3, 10813);
+data.setCell(1, 3, 10916);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testFailedLogin')
 data.setCell(2, 2, 'tests.LoginNegativeTest')
@@ -369,23 +369,23 @@ data.setCell(2, 3, 10607);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testFailedLogin')
 data.setCell(3, 2, 'tests.LoginNegativeTest')
-data.setCell(3, 3, 10539);
+data.setCell(3, 3, 10593);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testCreateIssueSuccessfully')
 data.setCell(4, 2, 'tests.CreateIssuePositiveTest')
-data.setCell(4, 3, 5544);
+data.setCell(4, 3, 5238);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCreateIssueWithoutRequiredFields')
-data.setCell(5, 2, 'tests.CreateIssueNegativeTest')
-data.setCell(5, 3, 4478);
+data.setCell(5, 1, 'testCreateProjectSuccessfully')
+data.setCell(5, 2, 'tests.CreateProjectTest')
+data.setCell(5, 3, 4230);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCreateProjectSuccessfully')
-data.setCell(6, 2, 'tests.CreateProjectTest')
-data.setCell(6, 3, 3997);
+data.setCell(6, 1, 'testCreateIssueWithoutRequiredFields')
+data.setCell(6, 2, 'tests.CreateIssueNegativeTest')
+data.setCell(6, 3, 3887);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testSuccessfulLogin')
 data.setCell(7, 2, 'tests.LoginPositiveTest')
-data.setCell(7, 3, 1328);
+data.setCell(7, 3, 1447);
 window.suiteTableData['YouTrack_Selenium_Tests_Suite']= { tableData: data, tableDiv: 'times-div-YouTrack_Selenium_Tests_Suite'}
 return data;
 }
@@ -423,18 +423,18 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSuccessfulLogin</span>
-                <span class="method-start">2076 ms</span>
+                <span class="method-start">2043 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testSuccessfulLogin status=SUCCESS method=LoginPositiveTest.testSuccessfulLogin()[p...)</span>
-                <span class="method-start">3406 ms</span>
+                <span class="method-start">3493 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3837 ms</span>
+                <span class="method-start">3856 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(invalid_user, wrong_password)</span>
@@ -442,88 +442,88 @@ return data;
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">15972 ms</span>
+                <span class="method-start">16076 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16181 ms</span>
+                <span class="method-start">16394 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(admin, wrong_password)</span>
-                <span class="method-start">17173 ms</span>
+                <span class="method-start">17341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">28736 ms</span>
+                <span class="method-start">28725 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">28899 ms</span>
+                <span class="method-start">29002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(, admin12)</span>
-                <span class="method-start">30237 ms</span>
+                <span class="method-start">30322 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">40844 ms</span>
+                <span class="method-start">40916 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">41008 ms</span>
+                <span class="method-start">41236 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(admin, )</span>
-                <span class="method-start">42459 ms</span>
+                <span class="method-start">42531 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">52998 ms</span>
+                <span class="method-start">53139 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateIssuePositiveTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">53156 ms</span>
+                <span class="method-start">53529 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateIssueSuccessfully</span>
-                <span class="method-start">54378 ms</span>
+                <span class="method-start">54872 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testCreateIssueSuccessfully status=SUCCESS method=CreateIssuePositiveTest.testCreat...)</span>
-                <span class="method-start">59922 ms</span>
+                <span class="method-start">60110 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateIssueNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">60174 ms</span>
+                <span class="method-start">60437 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateIssueWithoutRequiredFields</span>
-                <span class="method-start">61581 ms</span>
+                <span class="method-start">62022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testCreateIssueWithoutRequiredFields status=SUCCESS method=CreateIssueNegativeTest....)</span>
-                <span class="method-start">66059 ms</span>
+                <span class="method-start">65909 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateProjectTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">66267 ms</span>
+                <span class="method-start">66408 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateProjectSuccessfully</span>
-                <span class="method-start">67697 ms</span>
+                <span class="method-start">67381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testCreateProjectSuccessfully status=SUCCESS method=CreateProjectTest.testCreatePro...)</span>
-                <span class="method-start">71695 ms</span>
+                <span class="method-start">71612 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
