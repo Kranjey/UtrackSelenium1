@@ -1,67 +1,54 @@
 package com.example.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ProjectPage extends BasePage{
-    @FindBy(xpath = "//*[contains(@data-test, 'ring-link projects-button')]")
-    private WebElement selectProjectPage;
 
-    @FindBy(xpath = "//a[contains(@href, 'projects/create')]")
-    private WebElement createProjectButton;
-    
-    @FindBy(xpath = "//button[contains(@data-test, 'template')]")
-    private WebElement patternButton;
-
-    @FindBy(xpath = "//button[contains(@data-test, 'accept-button')]")
-    private WebElement patternAcceptButton;
-    
-    @FindBy(xpath = "//*[contains(@data-test, 'project-name')]")
-    private WebElement projectNameField;
-    
-    @FindBy(xpath = "//*[contains(@data-test, 'project-id')]")
-    private WebElement projectIdField;
-
-    @FindBy(xpath = "//button[contains(@type, 'submit')]")
-    private WebElement acceptButton;
-
-    @FindBy(xpath = "//button[contains(@data-test, 'skip')]")
-    private WebElement nextButton;
+    private By selectProjectPage = By.xpath("//*[contains(@data-test, 'ring-link projects-button')]");
+    private By createProjectButton = By.xpath("//a[contains(@href, 'projects/create')]");
+    private By patternButton = By.xpath("//button[contains(@data-test, 'template')]");
+    private By patternAcceptButton = By.xpath("//button[contains(@data-test, 'accept-button')]");
+    private By projectNameField = By.xpath("//*[contains(@data-test, 'project-name')]");
+    private By projectIdField = By.xpath("//*[contains(@data-test, 'project-id')]");
+    private By acceptButton = By.xpath("//button[contains(@type, 'submit')]");
+    private By nextButton = By.xpath("//button[contains(@data-test, 'skip')]");
 
     public ProjectPage(WebDriver driver) {
         super(driver);
     }
     
     public void switchtoProject(){
-        selectProjectPage.click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(selectProjectPage)));
+        driver.findElement(selectProjectPage).click();
     }
 
     public void clickProject(){
-        createProjectButton.click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(createProjectButton)));
+        driver.findElement(createProjectButton).click();
     }
 
     public void clickPattern(){
-        patternButton.click();
-        wait.until(ExpectedConditions.visibilityOf(patternAcceptButton));
-        patternAcceptButton.click();
+        driver.findElement(patternButton).click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(patternAcceptButton)));
+        driver.findElement(patternAcceptButton).click();
     }
     
     public void enterName(String projectName) {
-        wait.until(ExpectedConditions.visibilityOf(projectNameField));
-        projectNameField.click();
-        projectNameField.sendKeys(projectName);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(projectNameField)));
+        driver.findElement(projectNameField).click();
+        driver.findElement(projectNameField).sendKeys(projectName);
     }
     
     public void enterID(String projectID) {
-        projectIdField.click();
-        projectIdField.sendKeys(projectID);
+        driver.findElement(projectIdField).click();
+        driver.findElement(projectIdField).sendKeys(projectID);
     }
     
     
     public void clickSubmit() {
-        acceptButton.click();
+        driver.findElement(acceptButton).click();
     }
     
     public void enterProjectPage(){
@@ -78,7 +65,7 @@ public class ProjectPage extends BasePage{
     
     public boolean isProjectCreatedSuccessfully() {
         try {
-            return nextButton.isDisplayed();
+            return driver.findElement(nextButton).isDisplayed();
         } catch (Exception e) {
             return false;
         }

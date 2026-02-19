@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="methods" name="Failed suite [YouTrack Selenium Tests Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="Login Positive Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.LoginPositiveTest">
+        <methods>
+          <include name="testSuccessfulLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LoginPositiveTest -->
+    </classes>
+  </test> <!-- Login Positive Tests(failed) -->
+  <test thread-count="5" parallel="methods" name="Login Negative Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.LoginNegativeTest">
+        <methods>
+          <include name="testFailedLogin" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LoginNegativeTest -->
+    </classes>
+  </test> <!-- Login Negative Tests(failed) -->
+  <test thread-count="5" parallel="methods" name="Create Issue Positive Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.CreateIssuePositiveTest">
+        <methods>
+          <include name="testCreateIssueSuccessfully"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.CreateIssuePositiveTest -->
+    </classes>
+  </test> <!-- Create Issue Positive Tests(failed) -->
   <test thread-count="5" parallel="methods" name="Create Issue Negative Tests(failed)" verbose="0">
     <classes>
       <class name="tests.CreateIssueNegativeTest">
@@ -12,4 +45,15 @@
       </class> <!-- tests.CreateIssueNegativeTest -->
     </classes>
   </test> <!-- Create Issue Negative Tests(failed) -->
+  <test thread-count="5" parallel="methods" name="Create Project Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.CreateProjectTest">
+        <methods>
+          <include name="testCreateProjectSuccessfully"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.CreateProjectTest -->
+    </classes>
+  </test> <!-- Create Project Tests(failed) -->
 </suite> <!-- Failed suite [YouTrack Selenium Tests Suite] -->

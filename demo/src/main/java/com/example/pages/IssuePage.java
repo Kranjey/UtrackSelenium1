@@ -1,6 +1,7 @@
 package com.example.pages;
 
 import org.checkerframework.checker.units.qual.s;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,50 +11,40 @@ import org.openqa.selenium.support.ui.Select;
 
 public class IssuePage extends BasePage {
 
-    @FindBy(xpath = "//*[contains(@data-test, 'ring-link issues-button')]")
-    private WebElement selectIssuePage;
-    
-    @FindBy(xpath = "//*[contains(@data-test, 'createIssueButton')]")
-    private WebElement issueButton;
-    @FindBy(xpath = "//textarea[contains(@data-test, 'summary') and contains(@placeholder, 'Заголовок')]")
-    private WebElement summaryField;
-
-    @FindBy(xpath = "//*[contains(@data-test, 'wysiwyg-editor-content')]")
-    private WebElement descriptionField;
-    
-    @FindBy(xpath = "//*[contains(@data-test, 'submit-button')]")
-    private WebElement submitButton;
-    
-    @FindBy(xpath = "//*[contains(@data-test, 'alert') and contains(@data-test-type, 'success')]")
-    private WebElement successMessage;
+    private By selectIssuePage = By.xpath("//*[contains(@data-test, 'ring-link issues-button')]");  
+    private By issueButton = By.xpath("//*[contains(@data-test, 'createIssueButton')]");
+    private By summaryField = By.xpath("//textarea[contains(@data-test, 'summary') and contains(@placeholder, 'Заголовок')]");
+    private By descriptionField = By.xpath("//*[contains(@data-test, 'wysiwyg-editor-content')]");
+    private By submitButton = By.xpath("//*[contains(@data-test, 'submit-button')]");
+    private By successMessage = By.xpath("//*[contains(@data-test, 'alert') and contains(@data-test-type, 'success')]");
 
     public IssuePage(WebDriver driver) {
         super(driver);
     }
 
     public void switchtoIssue(){
-        selectIssuePage.click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(selectIssuePage)));
+        driver.findElement(selectIssuePage).click();
     }
 
     public void clickIssue(){
-        wait.until(ExpectedConditions.visibilityOf(issueButton));
-        issueButton.click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(issueButton)));
+        driver.findElement(issueButton).click();
     }
     
     public void enterSummary(String summary) {
-        wait.until(ExpectedConditions.visibilityOf(summaryField));
-        summaryField.click();
-        summaryField.sendKeys(summary);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(summaryField)));
+        driver.findElement(summaryField).click();
+        driver.findElement(summaryField).sendKeys(summary);
     }
     
     public void enterDescription(String description) {
-        descriptionField.click();
-        descriptionField.sendKeys(description);
+        driver.findElement(descriptionField).click();
+        driver.findElement(descriptionField).sendKeys(description);
     }
     
-    
     public void clickSubmit() {
-        submitButton.click();
+        driver.findElement(submitButton).click();
     }
     
     public void enterIssuePage(){
@@ -69,7 +60,7 @@ public class IssuePage extends BasePage {
     
     public boolean isIssueCreatedSuccessfully() {
         try {
-            return successMessage.isDisplayed();
+            return driver.findElement(successMessage).isDisplayed();
         } catch (Exception e) {
             return false;
         }
@@ -77,7 +68,7 @@ public class IssuePage extends BasePage {
     
     public boolean isButtonEnabled() {
         try {
-            return submitButton.isEnabled();
+            return driver.findElement(submitButton).isEnabled();
         } catch (Exception e) {
             return false;
         }
