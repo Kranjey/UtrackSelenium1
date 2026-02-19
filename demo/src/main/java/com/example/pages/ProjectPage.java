@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class ProjectPO extends BasePO{
+public class ProjectPage extends BasePage{
     @FindBy(xpath = "//*[contains(@data-test, 'ring-link projects-button')]")
     private WebElement selectProjectPage;
 
@@ -30,7 +30,7 @@ public class ProjectPO extends BasePO{
     @FindBy(xpath = "//button[contains(@data-test, 'skip')]")
     private WebElement nextButton;
 
-    public ProjectPO(WebDriver driver) {
+    public ProjectPage(WebDriver driver) {
         super(driver);
     }
     

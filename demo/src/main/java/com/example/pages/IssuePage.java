@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-public class IssuePO extends BasePO {
+public class IssuePage extends BasePage {
 
     @FindBy(xpath = "//*[contains(@data-test, 'ring-link issues-button')]")
     private WebElement selectIssuePage;
@@ -17,6 +17,7 @@ public class IssuePO extends BasePO {
     private WebElement issueButton;
     @FindBy(xpath = "//textarea[contains(@data-test, 'summary') and contains(@placeholder, 'Заголовок')]")
     private WebElement summaryField;
+
     @FindBy(xpath = "//*[contains(@data-test, 'wysiwyg-editor-content')]")
     private WebElement descriptionField;
     
@@ -26,7 +27,7 @@ public class IssuePO extends BasePO {
     @FindBy(xpath = "//*[contains(@data-test, 'alert') and contains(@data-test-type, 'success')]")
     private WebElement successMessage;
 
-    public IssuePO(WebDriver driver) {
+    public IssuePage(WebDriver driver) {
         super(driver);
     }
 
@@ -59,7 +60,7 @@ public class IssuePO extends BasePO {
         switchtoIssue();
         clickIssue();
     }
-    public void createIssue(String summary, String description, String project) {
+    public void createIssue(String summary, String description) {
         enterIssuePage();
         enterSummary(summary);
         enterDescription(description);
