@@ -15,10 +15,9 @@ import utils.ScreenshotUtil;
 
 public class CreateIssueNegativeTest extends BaseTest{
     @Test(description = "Негативный тест: Создание задачи без обязательных полей")
-    public void testCreateIssueWithoutRequiredFields() throws InterruptedException {
+    public void testCreateIssueWithoutRequiredFields()  {
         issuePage = new IssuePage(DriverFactory.getDriver());
         loginPage.login(TestConfig.getValidUsername(), TestConfig.getValidPassword());
-        issuePage.wait();
         issuePage.enterIssuePage();
         issuePage.clickSubmit();     
         Assert.assertFalse(issuePage.isButtonEnabled(), 

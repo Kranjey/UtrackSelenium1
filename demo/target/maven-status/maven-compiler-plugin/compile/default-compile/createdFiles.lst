@@ -1,7 +1,3 @@
 com\example\utils\DriverFactory.class
 com\example\Main.class
-com\example\pages\BasePO.class
-com\example\pages\IssuePO.class
-com\example\pages\ProjectPO.class
-com\example\pages\LoginPO.class
 com\example\config\TestConfig.class

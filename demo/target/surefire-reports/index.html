@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" class="navigator-link">
-              <span class="suite-name border-passed">YouTrack Selenium Tests Suite</span>
+              <span class="suite-name border-failed">YouTrack Selenium Tests Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" class="hide-methods failed suite-YouTrack_Selenium_Tests_Suite"> (hide)</a> <!-- hide-methods failed suite-YouTrack_Selenium_Tests_Suite -->
+                      <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" class="show-methods failed suite-YouTrack_Selenium_Tests_Suite"> (show)</a> <!-- show-methods failed suite-YouTrack_Selenium_Tests_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-YouTrack_Selenium_Tests_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.CreateIssueNegativeTest" class="method navigator-link" hash-for-method="testCreateIssueWithoutRequiredFields">testCreateIssueWithoutRequiredFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-YouTrack_Selenium_Tests_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +122,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.CreateIssueNegativeTest" class="method navigator-link" hash-for-method="testCreateIssueWithoutRequiredFields">testCreateIssueWithoutRequiredFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.CreateProjectTest" class="method navigator-link" hash-for-method="testCreateProjectSuccessfully">testCreateProjectSuccessfully</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(, admin12)">testFailedLogin(, admin12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,12 +132,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(admin, wrong_password)">testFailedLogin(admin, wrong_password)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(, admin12)">testFailedLogin(, admin12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(invalid_user, wrong_password)">testFailedLogin(invalid_user, wrong_password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-YouTrack_Selenium_Tests_Suite" title="tests.LoginNegativeTest" class="method navigator-link" hash-for-method="testFailedLogin(admin, wrong_password)">testFailedLogin(admin, wrong_password)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,6 +162,33 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-YouTrack_Selenium_Tests_Suite" class="panel YouTrack_Selenium_Tests_Suite">
+          <div class="suite-YouTrack_Selenium_Tests_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CreateIssueNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateIssueWithoutRequiredFields">
+                  </a> <!-- testCreateIssueWithoutRequiredFields -->
+                  <span class="method-name">testCreateIssueWithoutRequiredFields</span>
+                  <div class="stack-trace">java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:378)
+	at java.base/java.lang.Object.wait(Object.java:352)
+	at tests.CreateIssueNegativeTest.testCreateIssueWithoutRequiredFields(CreateIssueNegativeTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Негативный тест: Создание задачи без обязательных полей)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-YouTrack_Selenium_Tests_Suite-class-failed -->
           <div class="suite-YouTrack_Selenium_Tests_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,40 +202,6 @@
                   <span class="method-name">testCreateIssueSuccessfully</span>
                   <em>
 (Позитивный тест: Создание новой задачи)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-YouTrack_Selenium_Tests_Suite-class-passed -->
-          <div class="suite-YouTrack_Selenium_Tests_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CreateIssueNegativeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateIssueWithoutRequiredFields">
-                  </a> <!-- testCreateIssueWithoutRequiredFields -->
-                  <span class="method-name">testCreateIssueWithoutRequiredFields</span>
-                  <em>
-(Негативный тест: Создание задачи без обязательных полей)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-YouTrack_Selenium_Tests_Suite-class-passed -->
-          <div class="suite-YouTrack_Selenium_Tests_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LoginPositiveTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSuccessfulLogin">
-                  </a> <!-- testSuccessfulLogin -->
-                  <span class="method-name">testSuccessfulLogin</span>
-                  <em>
-(Позитивный тест: Успешная аутентификация)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,19 +226,26 @@
           <div class="suite-YouTrack_Selenium_Tests_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.LoginNegativeTest</span>
+              <span class="class-name">tests.LoginPositiveTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testFailedLogin(, admin12)">
-                  </a> <!-- testFailedLogin(, admin12) -->
-                  <span class="method-name">testFailedLogin</span>
-                  <span class="parameters">(,admin12)</span>
+                  <a name="testSuccessfulLogin">
+                  </a> <!-- testSuccessfulLogin -->
+                  <span class="method-name">testSuccessfulLogin</span>
                   <em>
-(Негативный тест: Аутентификация с неверными данными)                  </em>
+(Позитивный тест: Успешная аутентификация)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-YouTrack_Selenium_Tests_Suite-class-passed -->
+          <div class="suite-YouTrack_Selenium_Tests_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testFailedLogin(admin, )">
@@ -249,10 +258,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testFailedLogin(admin, wrong_password)">
-                  </a> <!-- testFailedLogin(admin, wrong_password) -->
+                  <a name="testFailedLogin(, admin12)">
+                  </a> <!-- testFailedLogin(, admin12) -->
                   <span class="method-name">testFailedLogin</span>
-                  <span class="parameters">(admin,wrong_password)</span>
+                  <span class="parameters">(,admin12)</span>
                   <em>
 (Негативный тест: Аутентификация с неверными данными)                  </em>
                 </div> <!-- method-content -->
@@ -263,6 +272,16 @@
                   </a> <!-- testFailedLogin(invalid_user, wrong_password) -->
                   <span class="method-name">testFailedLogin</span>
                   <span class="parameters">(invalid_user,wrong_password)</span>
+                  <em>
+(Негативный тест: Аутентификация с неверными данными)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFailedLogin(admin, wrong_password)">
+                  </a> <!-- testFailedLogin(admin, wrong_password) -->
+                  <span class="method-name">testFailedLogin</span>
+                  <span class="parameters">(admin,wrong_password)</span>
                   <em>
 (Негативный тест: Аутентификация с неверными данными)                  </em>
                 </div> <!-- method-content -->
@@ -357,40 +376,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testFailedLogin')
 data.setCell(0, 2, 'tests.LoginNegativeTest')
-data.setCell(0, 3, 11088);
+data.setCell(0, 3, 10961);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testFailedLogin')
 data.setCell(1, 2, 'tests.LoginNegativeTest')
-data.setCell(1, 3, 11072);
+data.setCell(1, 3, 10746);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testFailedLogin')
 data.setCell(2, 2, 'tests.LoginNegativeTest')
-data.setCell(2, 3, 10820);
+data.setCell(2, 3, 10696);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testFailedLogin')
 data.setCell(3, 2, 'tests.LoginNegativeTest')
-data.setCell(3, 3, 10647);
+data.setCell(3, 3, 10645);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testCreateIssueSuccessfully')
 data.setCell(4, 2, 'tests.CreateIssuePositiveTest')
-data.setCell(4, 3, 5467);
+data.setCell(4, 3, 5707);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCreateIssueWithoutRequiredFields')
-data.setCell(5, 2, 'tests.CreateIssueNegativeTest')
-data.setCell(5, 3, 3770);
+data.setCell(5, 1, 'testCreateProjectSuccessfully')
+data.setCell(5, 2, 'tests.CreateProjectTest')
+data.setCell(5, 3, 4612);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCreateProjectSuccessfully')
-data.setCell(6, 2, 'tests.CreateProjectTest')
-data.setCell(6, 3, 3769);
+data.setCell(6, 1, 'testSuccessfulLogin')
+data.setCell(6, 2, 'tests.LoginPositiveTest')
+data.setCell(6, 3, 1466);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSuccessfulLogin')
-data.setCell(7, 2, 'tests.LoginPositiveTest')
-data.setCell(7, 3, 1345);
+data.setCell(7, 1, 'testCreateIssueWithoutRequiredFields')
+data.setCell(7, 2, 'tests.CreateIssueNegativeTest')
+data.setCell(7, 3, 1107);
 window.suiteTableData['YouTrack_Selenium_Tests_Suite']= { tableData: data, tableDiv: 'times-div-YouTrack_Selenium_Tests_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-YouTrack_Selenium_Tests_Suite">
               </div> <!-- times-div-YouTrack_Selenium_Tests_Suite -->
             </div> <!-- times-div -->
@@ -423,107 +442,109 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSuccessfulLogin</span>
-                <span class="method-start">2116 ms</span>
+                <span class="method-start">2136 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testSuccessfulLogin status=SUCCESS method=LoginPositiveTest.testSuccessfulLogin()[p...)</span>
-                <span class="method-start">3464 ms</span>
+                <span class="method-start">3608 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3910 ms</span>
+                <span class="method-start">3830 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(invalid_user, wrong_password)</span>
-                <span class="method-start">6160 ms</span>
+                <span class="method-start">5166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">16980 ms</span>
+                <span class="method-start">15913 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">17362 ms</span>
+                <span class="method-start">16072 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(admin, wrong_password)</span>
-                <span class="method-start">18783 ms</span>
+                <span class="method-start">17415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">29872 ms</span>
+                <span class="method-start">28377 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30163 ms</span>
+                <span class="method-start">28662 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(, admin12)</span>
-                <span class="method-start">31568 ms</span>
+                <span class="method-start">30040 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">42215 ms</span>
+                <span class="method-start">40737 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">42600 ms</span>
+                <span class="method-start">40934 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFailedLogin(admin, )</span>
-                <span class="method-start">43580 ms</span>
+                <span class="method-start">42213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testFailedLogin status=SUCCESS method=LoginNegativeTest.testFailedLogin(java.lang.S...)</span>
-                <span class="method-start">54653 ms</span>
+                <span class="method-start">52859 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateIssuePositiveTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55002 ms</span>
+                <span class="method-start">52985 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateIssueSuccessfully</span>
-                <span class="method-start">55989 ms</span>
+                <span class="method-start">53904 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testCreateIssueSuccessfully status=SUCCESS method=CreateIssuePositiveTest.testCreat...)</span>
-                <span class="method-start">61456 ms</span>
+                <span class="method-start">59614 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateIssueNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">61790 ms</span>
+                <span class="method-start">59888 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCreateIssueWithoutRequiredFields</span>
-                <span class="method-start">63375 ms</span>
+                <span class="method-start">60907 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testCreateIssueWithoutRequiredFields status=SUCCESS method=CreateIssueNegativeTest....)</span>
-                <span class="method-start">67146 ms</span>
+                <span class="method-name">tearDown([TestResult name=testCreateIssueWithoutRequiredFields status=FAILURE method=CreateIssueNegativeTest....)</span>
+                <span class="method-start">62018 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateProjectTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">67483 ms</span>
+                <span class="method-start">62616 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateProjectSuccessfully</span>
-                <span class="method-start">69008 ms</span>
+                <span class="method-start">64307 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testCreateProjectSuccessfully status=SUCCESS method=CreateProjectTest.testCreatePro...)</span>
-                <span class="method-start">72778 ms</span>
+                <span class="method-start">68919 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
