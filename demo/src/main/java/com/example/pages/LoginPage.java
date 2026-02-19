@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     }
     
     public void enterUsername(String username) {
-        //wait.until(ExpectedConditions.visibilityOf(usernameField));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(usernameField)));
         driver.findElement(usernameField).clear();
         driver.findElement(usernameField).sendKeys(username);
     }
